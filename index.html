@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consórcio de Carros Esportivos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- Video Section -->
+<section class="video">
+  <div class="container1">
+      <h2 style="color: #ffffff;">Conheça Mais Sobre Nosso Consórcio</h2>
+      <div class="video-container">
+          <div class="video-wrapper">
+              <iframe 
+                  src="VIDEO APRESENTAÇÃO LANDING PAGE.mp4" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+  </div>
+</section>
+
+  
+
+  <!-- O que é Consórcio Section -->
+  <section class="about-section">
+    <div class="container">
+      <h2>Você sabe o que é Consórcio?</h2>
+      <div class="about-content">
+        <p>O consórcio é uma maneira simples e planejada de conquistar bens sem juros e sem entrada. E com a Ademicon, a maior administradora independente de consórcio do Brasil, você garante todo o suporte necessário para investir de maneira estratégica e segura.</p>
+        <p>Você já imaginou conquistar aquele bem tão desejado de forma segura e sem juros?</p>
+        <div class="info-box">
+          <div class="icon">🚗</div>
+          <p>Com o consórcio, você planeja a compra do seu bem de forma inteligente e econômica!</p>
+          <div class="icon">🏠</div>
+        </div>
+        <br>
+        <div class="cta-button">
+          <button>Comece Agora</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Carros Section -->
+<section class="cars-section">
+  <div class="container">
+      <h2>Consórcios mais <span>Buscados:</span></h2>
+      <div class="cars-grid">
+          <div class="car-card">
+              <img src="https://blog.homer.com.br/wp-content/uploads/2021/05/shutterstock_363324191.jpg" alt="Imóveis">
+              <div class="car-info">
+                  <h3>Imóveis</h3>
+                  <p class="price-label">A partir de</p>
+                  <p class="price">R$ 125.000</p>
+              </div>
+          </div>
+          <div class="car-card">
+              <img src="https://quatrorodas.abril.com.br/wp-content/uploads/2019/01/carrro-moto-1-e1551121504282.jpg?quality=70&strip=info" alt="Veículos">
+              <div class="car-info">
+                  <h3>Veículos</h3>
+                  <p class="price-label">A partir de</p>
+                  <p class="price">R$ 52.000</p>
+              </div>
+          </div>
+          <div class="car-card">
+              <img src="https://www.totvs.com/wp-content/uploads/2021/05/como-funciona-um-contrato-1024x683.jpg" alt="Serviços">
+              <div class="car-info">
+                  <h3>Serviços</h3>
+                  <p class="price-label">A partir de</p>
+                  <p class="price">R$ 15.000</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Vantagens Section -->
+  <section class="advantages-section">
+    <div class="container">
+      <h2>Vantagens do Consórcio</h2>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="icon">💰</div>
+          <h3>Melhores condições</h3>
+          <p>Com o consórcio você adquire bens como casa, carro ou viagens sem pagar juros ou entrada.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="icon">📈</div>
+          <h3>Invista com segurança</h3>
+          <p>Todo o processo é regulamentado pelo Banco Central do Brasil.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="icon">🔎</div>
+          <h3>Apoio de especialistas</h3>
+          <p>Do planejamento até a contemplação, nossos consultores te ajudam em todas as etapas.</p>
+        </div>
+      </div>
+      <div class="advantage-card">
+        <div class="icon">💫</div>
+        <h3>Funcionamento simples</h3>
+        <p>Contribua mensalmente em um grupo e seja contemplado por sorteio ou lance.</p>
+      </div>
+    </div>
+    <br>
+    </div>
+  </section>
+
+
+  <!-- Hero Section with Form -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Acelere Rumo à sua<br><span class="highlight">Conquista</span></h1>
+          <p>Condições exclusivas para você adquirir seu bem dos sonhos🚀✨</p>
+        </div>
+        <div class="hero-form">
+          <form id="proposalForm" onsubmit="handleSubmit(event)">
+            <h3>Solicite uma Proposta</h3>
+            <div class="form-group">
+              <input type="text" id="nome" placeholder="Nome Completo" required>
+              <input type="email" id="email" placeholder="E-mail" required>
+              <input type="tel" id="telefone" placeholder="Telefone" required>
+              <select id="interesse" required>
+                <option value="">Selecione seu interesse</option>
+                <option value="Imóveis">Imóveis</option>
+                <option value="Veículos">Veículos</option>
+                <option value="Serviços">Serviços</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <button type="submit">Quero uma Proposta</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Ademicon. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      console.log(Object.fromEntries(formData));
+      alert('Proposta enviada com sucesso!');
+    }
+
+    function handleSubmit(event) {
+    event.preventDefault();
+    
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+    let telefone = document.getElementById("telefone").value;
+    let interesse = document.getElementById("interesse").value;
+    
+    let mensagem = `Olá, meu nome é ${nome}.\nTenho interesse em ${interesse}.\nMeu email: ${email}\nMeu telefone: ${telefone}`;
+    
+    let numeroWhatsApp = "5511999999999"; // Substitua pelo número desejado com DDI e DDD
+    let linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+    
+    window.open(linkWhatsApp, "_blank");
+  }
+  </script>
+</body>
+</html>

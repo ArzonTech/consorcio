@@ -1,0 +1,324 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #ff3333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/8293700/pexels-photo-8293700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(255, 51, 51, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.hero-text {
+  padding: 2rem 0;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Form Styles */
+.hero-form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+select option {
+  background: #222;
+  color: white;
+}
+
+
+button {
+  background: #ff3333;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #ff0000;
+}
+
+/* Video Section */
+.video {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--brown-50), var(--brown-50));
+  background-color: #ff0000;
+}
+
+.video h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.video-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding-top: 56.25%; /* Mantém a proporção 16:9 */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Cars Section */
+.cars-section {
+  background: #f8f9fa;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.cars-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.cars-section h2 span {
+  color: #ff3333;
+  font-weight: bold;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.car-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  text-align: center;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.car-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ff3333;
+}
+
+.car-info .price-label {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.car-info .price {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+  background: #000;
+  padding: 5rem 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 51, 51, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  border: 1px solid rgba(255, 51, 51, 0.2);
+}
+
+.info-box .icon {
+  font-size: 2rem;
+}
+
+/* Advantages Section */
+.advantages-section {
+  background: #111;
+  padding: 5rem 0;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.advantage-card {
+  background: #000;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid rgba(255, 51, 51, 0.2);
+  transition: transform 0.3s;
+}
+
+.advantage-card:hover {
+  transform: scale(1.05);
+}
+
+.advantage-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 51, 51, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .cars-grid,
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+}
