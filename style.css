@@ -12,6 +12,34 @@ body {
   background-color: #ffffff;
 }
 
+.header-image {
+  width: 100%; /* Por padrão, ocupa toda a largura */
+  max-height: 150px; /* Mantém a altura controlada */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ajuste para telas maiores (computadores) */
+@media (min-width: 768px) {
+  .header-container {
+    text-align: center;
+    padding: 20px 0; /* Mais espaçamento para não ficar colado no topo */
+  }
+
+  .header-image {
+    width: 50%; /* Reduz a largura no computador */
+    max-height: 100%; /* Deixa menor */
+  }
+}
+
+.header-container {
+  background-color: #8B0000; /* Vermelho escuro para combinar com o site */
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 10px 0; /* Adiciona um espaçamento superior e inferior */
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -37,7 +65,7 @@ h3 {
 }
 
 .highlight {
-  color: #ff3333;
+  color: ce2616;
 }
 
 /* Hero Section */
@@ -109,7 +137,7 @@ select option {
 
 
 button {
-  background: #ff3333;
+  background: #ce2616;
   border: none;
   font-weight: bold;
   cursor: pointer;
@@ -118,27 +146,27 @@ button {
 }
 
 button:hover {
-  background: #ff0000;
+  background: #ce2616;
 }
 
 /* Video Section */
 .video {
-  padding: 4rem 0;
+  padding: 6rem 1.5rem; /* Mais espaço ao redor */
   background: linear-gradient(135deg, var(--brown-50), var(--brown-50));
-  background-color: #ff0000;
+  background-color: #ce2616;
+  text-align: center;
 }
 
 .video h2 {
-  text-align: center;
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
 }
 
 .video-container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0;
-  text-align: center;
+  padding: 0 1rem;
 }
 
 .video-wrapper {
@@ -147,8 +175,8 @@ button:hover {
   max-width: 800px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
   padding-top: 56.25%; /* Mantém a proporção 16:9 */
 }
 
@@ -161,6 +189,133 @@ button:hover {
   border: none;
 }
 
+/* Melhorando para mobile */
+@media (max-width: 768px) {
+  .video {
+    padding: 4rem 1rem;
+  }
+
+  .video h2 {
+    font-size: 1.8rem;
+  }
+
+  .video-wrapper {
+    max-width: 100%;
+    padding-top: 60%; /* Ajuste para telas menores */
+    border-radius: 10px;
+  }
+}
+
+/* Seção Quem Sou Eu */
+.quem-sou-eu {
+  background-color: #f4f4f4; /* Fundo suave */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.quem-sou-eu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap; /* Permite ajuste no mobile */
+}
+
+.image-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%; /* Imagem redonda */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.text-container {
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  color: #8B0000; /* Vermelho escuro */
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+  .quem-sou-eu-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+}
+
+.botoes-contato {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.botao img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.whatsapp {
+  background-color: #42c255;
+}
+
+.whatsapp:hover {
+  background-color: #1da851;
+}
+
+.instagram {
+  background-color: #ec4e30;
+}
+
+.instagram:hover {
+  background-color: #c1354e;
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+  .botoes-contato {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botao {
+    width: 80%;
+    justify-content: center;
+  }
+}
+
+
 /* Cars Section */
 .cars-section {
   background: #f8f9fa;
@@ -170,18 +325,18 @@ button:hover {
 
 .cars-section h2 {
   font-size: 2rem;
-  color: #333;
+  color: #8B0000;
   margin-bottom: 2rem;
 }
 
 .cars-section h2 span {
-  color: #ff3333;
+  color: ce2616;
   font-weight: bold;
 }
 
 .cars-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas na primeira linha */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -219,7 +374,7 @@ button:hover {
 .car-info h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #ff3333;
+  color: #ce2616;
 }
 
 .car-info .price-label {
@@ -233,9 +388,20 @@ button:hover {
   font-weight: bold;
 }
 
+/* Responsividade para celular */
+@media (max-width: 768px) {
+  .cars-grid {
+    grid-template-columns: 1fr; /* Para telas pequenas, exibe uma coluna */
+  }
+
+  .car-card:nth-child(3) {
+    grid-column: span 1; /* Garante que o terceiro item ocupe uma coluna */
+  }
+}
+
 /* About Section */
 .about-section {
-  background: #000;
+  background: #909090;
   padding: 5rem 0;
 }
 
@@ -248,11 +414,11 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: rgba(255, 51, 51, 0.1);
+  background: rgba(217, 5, 5, 0.4);
   padding: 1.5rem;
   border-radius: 1rem;
   margin-top: 2rem;
-  border: 1px solid rgba(255, 51, 51, 0.2);
+  border: 1px solid rgba(255, 51, 51, 0.9);
 }
 
 .info-box .icon {
@@ -261,8 +427,35 @@ button:hover {
 
 /* Advantages Section */
 .advantages-section {
-  background: #111;
-  padding: 5rem 0;
+ background-color: rgb(224, 228, 231);
+  background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+  width: 100%;
+  min-height: 100vh; /* Garante que ocupe a altura total da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: white; /* Para melhor contraste */
+  position: relative;
+}
+
+/* Efeito de sobreposição para melhor legibilidade do texto */
+.advantagens-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Escurece um pouco a imagem */
+}
+
+/* Garante que o conteúdo não fique escondido pelo overlay */
+.advantagens-section .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
 }
 
 .advantages-grid {
@@ -273,7 +466,7 @@ button:hover {
 }
 
 .advantage-card {
-  background: #000;
+  background: #8B0000;
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
